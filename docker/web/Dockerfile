@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:8.3-apache
 RUN apt-get update -y && \
     docker-php-ext-install pdo pdo_mysql pcntl sockets
 RUN pecl install -o -f redis && \
