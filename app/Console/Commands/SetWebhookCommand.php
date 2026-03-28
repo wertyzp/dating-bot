@@ -50,6 +50,7 @@ class SetWebhookCommand extends Command
         $this->info('setting webhook');
         $setWebhook = new SetWebhook();
         $setWebhook->setUrl($url);
+        $setWebhook->setAllowedUpdates(['message', 'edited_message', 'callback_query', 'chat_member']);
         $client = new Client($token);
         $result = $client->setWebhook($setWebhook);
         $this->info('response: '.$result ? 'success' : 'fail');
