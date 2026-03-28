@@ -8,6 +8,7 @@ use App\Chat\ContextManager;
 use App\Chat\Support\UpdateClient;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
+use Werty\Http\Clients\TelegramBot\Types\User;
 
 class HelloUpdateContext extends BaseContext implements LoggerAwareInterface
 {
@@ -38,7 +39,24 @@ class HelloUpdateContext extends BaseContext implements LoggerAwareInterface
         }
 
         $name = $this->resolveJoinedUserName($data);
-        $this->uc->sendMessage("Hello, {$name}!");
+
+        $message =<<<EOL
+{$name},
+Вітаємо у чаті «ВІН — ВОНА | ЖИВЕ СПІЛКУВАННЯ» 👋
+
+Це простір дорослого, приємного спілкування між чоловіками та жінками.
+
+📌 При вході, будь ласка:
+• представтесь (імʼя + кілька слів про себе)
+• додайте фото
+
+🔹 Повага, адекватність і жива атмосфера — наші головні правила.
+
+Приємного спілкування ☕️✨
+EOL;
+
+
+        $this->uc->sendMessage($message);
         $this->logger->info('Greeted joined user', ['chat_id' => $data['chat']['id'] ?? null, 'name' => $name]);
     }
 
@@ -48,16 +66,25 @@ class HelloUpdateContext extends BaseContext implements LoggerAwareInterface
         if (!$message) {
             return;
         }
-
-        $data = $message->toArray();
-        if (empty($data['left_chat_member'])) {
+        $leftUser = $message->getLeftChatMember();
+        if (empty($leftUser)) {
             return;
         }
 
-        $this->uc->sendMessage('bye');
+        $this->uc->sendMessage('Бувай, ' . $this->getName($leftUser) . '! Сподіваємось побачити тебе знову! 👋');
         $this->logger->info('Sent leave message', ['chat_id' => $data['chat']['id'] ?? null]);
     }
 
+    protected function getName(User $user): string
+    {
+        if ($user->getFirstName()) {
+            return $user->getFirstName();
+        }
+        if ($user->getUsername()) {
+            return '@' . $user->getUsername();
+        }
+        return 'неизвестно';
+    }
     protected function resolveJoinedUserName(array $messageData): string
     {
         $member = null;

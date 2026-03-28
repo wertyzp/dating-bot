@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82efa1b4185fcab596ca551e6b4368ec",
+    "content-hash": "493afc90ca51e2e5e0523afa65fc0197",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.373.2",
+            "version": "3.374.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "483fba51c28b3a0c0647bf5100e0edca82090b18"
+                "reference": "67b6b6210af47319c74c5666388d71bc1bc58276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/483fba51c28b3a0c0647bf5100e0edca82090b18",
-                "reference": "483fba51c28b3a0c0647bf5100e0edca82090b18",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/67b6b6210af47319c74c5666388d71bc1bc58276",
+                "reference": "67b6b6210af47319c74c5666388d71bc1bc58276",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.373.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.374.2"
             },
-            "time": "2026-03-13T18:08:30+00:00"
+            "time": "2026-03-27T18:05:55+00:00"
         },
         {
             "name": "brick/math",
@@ -984,12 +984,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "0b0d89e9f5ef1cc702a5c700f3ef0e7fff2009f1"
+                "reference": "2ef1fed80ae2a46570739a3afe2df96ebf9ad4d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/0b0d89e9f5ef1cc702a5c700f3ef0e7fff2009f1",
-                "reference": "0b0d89e9f5ef1cc702a5c700f3ef0e7fff2009f1",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/2ef1fed80ae2a46570739a3afe2df96ebf9ad4d8",
+                "reference": "2ef1fed80ae2a46570739a3afe2df96ebf9ad4d8",
                 "shasum": ""
             },
             "require": {
@@ -1081,7 +1081,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-13T17:05:05+00:00"
+            "time": "2026-03-28T07:20:33+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -1160,12 +1160,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "e01f4a821471308ba86aa202fed6698b6b695e3b"
+                "reference": "806fe8441c34bed1318bc779e2a510e6555f2169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/e01f4a821471308ba86aa202fed6698b6b695e3b",
-                "reference": "e01f4a821471308ba86aa202fed6698b6b695e3b",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/806fe8441c34bed1318bc779e2a510e6555f2169",
+                "reference": "806fe8441c34bed1318bc779e2a510e6555f2169",
                 "shasum": ""
             },
             "require": {
@@ -1173,7 +1173,7 @@
                 "phpoption/phpoption": "^1.9.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5.41 || ^9.6.22 || ^10.5.45 || ^11.5.7"
+                "phpunit/phpunit": "^8.5.52 || ^9.6.34 || ^10.5.63 || ^11.5.55 || ^12.5.14"
             },
             "default-branch": true,
             "type": "library",
@@ -1215,7 +1215,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-27T19:43:20+00:00"
+            "time": "2026-03-19T18:33:23+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -4168,12 +4168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/openai-php/client.git",
-                "reference": "6a5456d9c6bd0098b63a37607ed514c222419374"
+                "reference": "9c0b8cc196b88ef605c0e978536ade71ff12272c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/openai-php/client/zipball/6a5456d9c6bd0098b63a37607ed514c222419374",
-                "reference": "6a5456d9c6bd0098b63a37607ed514c222419374",
+                "url": "https://api.github.com/repos/openai-php/client/zipball/9c0b8cc196b88ef605c0e978536ade71ff12272c",
+                "reference": "9c0b8cc196b88ef605c0e978536ade71ff12272c",
                 "shasum": ""
             },
             "require": {
@@ -4252,7 +4252,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-10T14:47:53+00:00"
+            "time": "2026-03-27T12:11:16+00:00"
         },
         {
             "name": "php-http/discovery",
@@ -5013,12 +5013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "8429c78ca35a09f27565311b98101e2826affde0"
+                "reference": "39d47ce3362c19d0bc1c77325554cca294224726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/8429c78ca35a09f27565311b98101e2826affde0",
-                "reference": "8429c78ca35a09f27565311b98101e2826affde0",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/39d47ce3362c19d0bc1c77325554cca294224726",
+                "reference": "39d47ce3362c19d0bc1c77325554cca294224726",
                 "shasum": ""
             },
             "require": {
@@ -5082,9 +5082,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.9.2"
+                "source": "https://github.com/ramsey/uuid/tree/4.x"
             },
-            "time": "2025-12-14T04:43:48+00:00"
+            "time": "2026-03-16T21:29:54+00:00"
         },
         {
             "name": "react/cache",
@@ -6238,12 +6238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "0dc71f52e5d35bb045fd0f82b1a80c027971d551"
+                "reference": "1baea3a592ec5ee1f58de6548a034268d4946db6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/0dc71f52e5d35bb045fd0f82b1a80c027971d551",
-                "reference": "0dc71f52e5d35bb045fd0f82b1a80c027971d551",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/1baea3a592ec5ee1f58de6548a034268d4946db6",
+                "reference": "1baea3a592ec5ee1f58de6548a034268d4946db6",
                 "shasum": ""
             },
             "require": {
@@ -6328,7 +6328,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-18T07:27:25+00:00"
+            "time": "2026-03-23T20:48:09+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -6500,12 +6500,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "5ba59341639b232728a147fb165c31883866245a"
+                "reference": "b22a712e646064a6b84153ececeb963948944146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/5ba59341639b232728a147fb165c31883866245a",
-                "reference": "5ba59341639b232728a147fb165c31883866245a",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/b22a712e646064a6b84153ececeb963948944146",
+                "reference": "b22a712e646064a6b84153ececeb963948944146",
                 "shasum": ""
             },
             "require": {
@@ -6610,7 +6610,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-06T16:30:12+00:00"
+            "time": "2026-03-22T13:52:11+00:00"
         },
         {
             "name": "symfony/mime",
@@ -7598,12 +7598,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "639fa48ea277babeb67e1432ce60a029d795bd63"
+                "reference": "d25d82433a80eba6aa0e6c24b61d7370d99e444a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/639fa48ea277babeb67e1432ce60a029d795bd63",
-                "reference": "639fa48ea277babeb67e1432ce60a029d795bd63",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d25d82433a80eba6aa0e6c24b61d7370d99e444a",
+                "reference": "d25d82433a80eba6aa0e6c24b61d7370d99e444a",
                 "shasum": ""
             },
             "require": {
@@ -7678,7 +7678,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-13T20:42:21+00:00"
+            "time": "2026-03-28T09:44:51+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -8307,12 +8307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wertyzp/telegram-bot-client.git",
-                "reference": "05a45fca7deec9d495ef1ab0409ca7fb43ad59db"
+                "reference": "9336f77d6f54058615954dcdae0bec6d91827757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wertyzp/telegram-bot-client/zipball/05a45fca7deec9d495ef1ab0409ca7fb43ad59db",
-                "reference": "05a45fca7deec9d495ef1ab0409ca7fb43ad59db",
+                "url": "https://api.github.com/repos/wertyzp/telegram-bot-client/zipball/9336f77d6f54058615954dcdae0bec6d91827757",
+                "reference": "9336f77d6f54058615954dcdae0bec6d91827757",
                 "shasum": ""
             },
             "require": {
@@ -8339,7 +8339,7 @@
                 "issues": "https://github.com/wertyzp/telegram-bot-client/issues",
                 "source": "https://github.com/wertyzp/telegram-bot-client/tree/main"
             },
-            "time": "2025-04-04T10:52:24+00:00"
+            "time": "2026-03-28T10:21:28+00:00"
         }
     ],
     "packages-dev": [
