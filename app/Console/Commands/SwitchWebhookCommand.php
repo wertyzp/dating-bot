@@ -73,6 +73,7 @@ class SwitchWebhookCommand extends Command
 
         $setWebhook = new SetWebhook();
         $setWebhook->setUrl($url);
+        $setWebhook->setAllowedUpdates(['message', 'edited_message', 'callback_query', 'chat_member']);
 
         $result = $client->setWebhook($setWebhook);
         $this->info('response: '.$result ? 'success' : 'fail');
