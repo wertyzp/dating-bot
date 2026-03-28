@@ -66,6 +66,10 @@ class UpdateClient
             $this->messageId = $this->callbackMessageId;
             $this->answerCallbackQuery = AnswerCallbackQuery::create($this->update->getCallbackQuery()->getId());
         }
+
+        if ($update->getChatMember()) {
+            $this->chatId = $this->update->getChatMember()->getChat()->getId();
+        }
     }
 
     public function setModeNew(): void

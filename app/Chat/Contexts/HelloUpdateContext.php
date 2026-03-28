@@ -62,17 +62,24 @@ EOL;
 
     public function sayBye(): void
     {
-        $message = $this->uc->getUpdate()->getMessage();
-        if (!$message) {
-            return;
-        }
-        $leftUser = $message->getLeftChatMember();
-        if (empty($leftUser)) {
-            return;
+        $update = $this->uc->getUpdate();
+
+        $chatMember = $update->getChatMember()?->getNewChatMember();
+        if (!$chatMember) {
+            $message = $update->getMessage();
+            if (!$message) {
+                return;
+            }
+            $leftUser = $message->getLeftChatMember();
+            if (empty($leftUser)) {
+                return;
+            }
+        } else {
+            $leftUser = $chatMember->getUser();
         }
 
         $this->uc->sendMessage('Бувай, ' . $this->getName($leftUser) . '! Сподіваємось побачити тебе знову! 👋');
-        $this->logger->info('Sent leave message', ['chat_id' => $data['chat']['id'] ?? null]);
+        $this->logger->info('Sent leave message');
     }
 
     protected function getName(User $user): string

@@ -19,7 +19,8 @@ class UpdateContextHandler extends BasicContextHandler
         $this->when(Expression::text('message.text', 'new used joined'), [HelloUpdateContext::class, 'greetNewUser']);
         $this->when(Expression::text('message.text', 'new user joined'), [HelloUpdateContext::class, 'greetNewUser']);
 
-        $this->when(Expression::exists('message.left_chat_member'), [HelloUpdateContext::class, 'sayBye']);
+        $this->when(Expression::text('chat_member.new_chat_member.status', 'left'), [HelloUpdateContext::class, 'sayBye']);
+        //$this->when(Expression::exists('message.left_chat_member'), [HelloUpdateContext::class, 'sayBye']);
 
         // restart session-independent command
         $this->when(
