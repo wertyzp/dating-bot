@@ -8307,12 +8307,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wertyzp/telegram-bot-client.git",
-                "reference": "9336f77d6f54058615954dcdae0bec6d91827757"
+                "reference": "805a9ecf4ccafbae24670e2e514da163d1c0bad7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wertyzp/telegram-bot-client/zipball/9336f77d6f54058615954dcdae0bec6d91827757",
-                "reference": "9336f77d6f54058615954dcdae0bec6d91827757",
+                "url": "https://api.github.com/repos/wertyzp/telegram-bot-client/zipball/805a9ecf4ccafbae24670e2e514da163d1c0bad7",
+                "reference": "805a9ecf4ccafbae24670e2e514da163d1c0bad7",
                 "shasum": ""
             },
             "require": {
@@ -8339,7 +8339,7 @@
                 "issues": "https://github.com/wertyzp/telegram-bot-client/issues",
                 "source": "https://github.com/wertyzp/telegram-bot-client/tree/main"
             },
-            "time": "2026-03-28T10:21:28+00:00"
+            "time": "2026-03-28T17:09:11+00:00"
         }
     ],
     "packages-dev": [
