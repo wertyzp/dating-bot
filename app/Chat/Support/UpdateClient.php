@@ -72,6 +72,11 @@ class UpdateClient
         }
     }
 
+    public function getChatId(): int
+    {
+        return $this->chatId;
+    }
+
     public function setModeNew(): void
     {
         $this->mode = self::MODE_NEW;

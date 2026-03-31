@@ -14,11 +14,12 @@ class UpdateContextHandler extends BasicContextHandler
     public function __construct()
     {
         // Join events can come from Telegram service fields or custom text markers.
-        $this->when(Expression::exists('message.new_chat_members'), [HelloUpdateContext::class, 'greetNewUser']);
-        $this->when(Expression::exists('message.new_chat_member'), [HelloUpdateContext::class, 'greetNewUser']);
-        $this->when(Expression::text('message.text', 'new used joined'), [HelloUpdateContext::class, 'greetNewUser']);
-        $this->when(Expression::text('message.text', 'new user joined'), [HelloUpdateContext::class, 'greetNewUser']);
+        //$this->when(Expression::exists('message.new_chat_members'), [HelloUpdateContext::class, 'greetNewUser']);
+        //$this->when(Expression::exists('message.new_chat_member'), [HelloUpdateContext::class, 'greetNewUser']);
+        //$this->when(Expression::text('message.text', 'new used joined'), [HelloUpdateContext::class, 'greetNewUser']);
+        //$this->when(Expression::text('message.text', 'new user joined'), [HelloUpdateContext::class, 'greetNewUser']);
 
+        $this->when(Expression::text('chat_member.new_chat_member.status', 'member'), [HelloUpdateContext::class, 'greetNewUser']);
         $this->when(Expression::text('chat_member.new_chat_member.status', 'left'), [HelloUpdateContext::class, 'sayBye']);
         //$this->when(Expression::exists('message.left_chat_member'), [HelloUpdateContext::class, 'sayBye']);
 
